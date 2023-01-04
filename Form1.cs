@@ -16,5 +16,18 @@ namespace Final_Project
         {
             InitializeComponent();
         }
+
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            float fcpu = pCpu.NextValue();
+            chart1.Series["CPU"].Points.AddY(fcpu);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer.Start();
+
+        }
     }
 }
