@@ -19,8 +19,8 @@ namespace Final_Project
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            float fcpu = pCpu.NextValue();
-            chart1.Series["CPU"].Points.AddY(fcpu);
+            float Ffcpu = pCpu.NextValue();
+            chart1.Series["CPU"].Points.AddY(Ffcpu);
 
         }
 
